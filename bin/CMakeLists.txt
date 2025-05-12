@@ -3,4 +3,3 @@ file(GLOB srcs "*.cpp")#Добавляем в переменную srcs все �
 add_executable(${application} ${srcs} ${hdrs}) #Создаем проект
 target_link_libraries(${application} ${library}) #Подключаем к проекту библиотеку
 target_link_libraries(${application} ${CURSES_LIBRARIES})
-target_compile_options(first-test PRIVATE -fpermissive)
