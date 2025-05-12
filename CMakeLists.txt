@@ -13,8 +13,8 @@ endif()
 
 #find_package(Curses REQUIRED)
 #include_directories(${CURSES_INCLUDE_DIR})
-#add_definitions("-fpermissive")
-target_compile_options(first-test PRIVATE -fpermissive)
+add_definitions("-fpermissive")
+#target_compile_options(first-test PRIVATE -fpermissive)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib) #Добавляем директорию "${CMAKE_CURRENT_SOURCE_DIR}/lib" в дополняемые каталоги включаемых файлов
 #${CMAKE_CURRENT_SOURCE_DIR} - стандартная переменная с адресом рабочей директории
